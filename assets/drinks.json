@@ -1,0 +1,12 @@
+{
+	"Drinks": [
+		{
+			"id": 0,
+			"name": "Water",
+			"image": "assets/drinks/water.png",
+			"half": 0,
+			"full": 0,
+			"addedToTotal": false
+		}
+	]
+}
