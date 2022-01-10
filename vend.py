@@ -6,6 +6,8 @@ HEIGHT = 1024
 
 f = open("assets/drinks.json")
 DRINKS = json.loads(f.read())
+
+ADMIN_CODE = "1111"
 		
 class StartPage(tk.Frame):
 	def __init__(self, parent, controller):
@@ -65,7 +67,7 @@ class VendPage(tk.Frame):
 			if len(labelText) < 2:
 				label.configure(text=labelText+inputText)
 			self.code += inputText
-			if self.code == "1111":
+			if self.code == ADMIN_CODE:
 				controller.showFrame(AdminPage)
 	
 	def confirm(self, label):
